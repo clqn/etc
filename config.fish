@@ -27,7 +27,7 @@ alias ls=exa
 alias ll='exa -l'
 alias la='exa -a'
 alias dl='mv -t ~/del'
-alias rm='echo "please use dl instead"'
+alias rm='echo "please use dl instead to remove "'
 
 alias py='python3'
 alias numpy='ipython -i -c "from numpy import *;from numpy.linalg import *"'
