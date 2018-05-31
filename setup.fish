@@ -8,6 +8,9 @@ mkdir ~/.i3
 ln -sr ~/etc/i3config ~/.i3/config
 ln -sr ~/etc/i3status.conf ~/.i3/i3status.conf
 
+mkdir ~/.xmonad
+ln -sr ~/etc/xmonad.hs ~/.xmonad/xmonad.hs
+
 ln -sr ~/etc/Xresources ~/.Xresources
 ln -sr ~/etc/tmux.conf ~/.tmux.conf
 ln -sr ~/etc/vimrc ~/.vimrc
