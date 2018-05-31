@@ -1,3 +1,6 @@
+set -g fish_user_paths ~/bin
+fish_vi_key_bindings
+
 function fish_mode_prompt
   switch $fish_bind_mode
     case default
@@ -20,15 +23,14 @@ function fish_mode_prompt
 end
 
 # aliases
-
 alias ls=exa
-alias ll="exa -l"
-alias la="exa -a"
+alias ll='exa -l'
+alias la='exa -a'
 alias dl='mv -t ~/del'
 alias rm='echo "please use dl instead"'
 
-alias py="python3"
-alias numpy="ipython -i -c 'from numpy import *;from numpy.linalg import *'"
+alias py='python3'
+alias numpy='ipython -i -c "from numpy import *;from numpy.linalg import *"'
 
 alias vi=vim
 alias ed='rlwrap ed -p " * " -v' # ED IS THE STANDARD TEXT EDITOR

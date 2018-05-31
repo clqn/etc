@@ -1,5 +1,8 @@
+
 mkdir -p ~/.config/fish/
 ln -sr ~/etc/config.fish ~/.config/fish/config.fish
+mkdir ~/bin # for fish_user_path
+mkdir ~/del # for the dl alias
 
 mkdir ~/.i3
 ln -sr ~/etc/i3config ~/.i3/config
