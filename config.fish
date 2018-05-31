@@ -33,5 +33,6 @@ alias numpy="ipython -i -c 'from numpy import *;from numpy.linalg import *'"
 alias vi=vim
 alias ed='rlwrap ed -p " * " -v' # ED IS THE STANDARD TEXT EDITOR
 alias tm='tmux attach; or tmux'
-alias to='vim ~/todo'
+alias todo='vim ~/todo'
+alias note='vim ~/note'
 alias c='xsel -b'
