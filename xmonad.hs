@@ -4,7 +4,6 @@ import System.Exit (exitWith, ExitCode(..))
 import Data.Map (fromList, insert, delete)
 import qualified XMonad as Xm
 
-
 myTerminal :: String
 myTerminal = "urxvt"
 
@@ -20,15 +19,25 @@ myKeys conf@(Xm.XConfig {Xm.modMask = mod}) =
     deleteThese ks  m = foldl (\m' k -> delete k m') m ks
     insertThese kvs m = foldl (\m' (k,v) -> insert k v m') m kvs
     shift = Xm.shiftMask
+    restartScript = "if type xmonad; then xmonad --recompile && xmonad --restart; else xmessage xmonad not in \\$PATH: \"$PATH\"; fi"
     -- oldBinds are removed before newBinds are added
     -- they represent unwanted keyboard shortcuts
     oldBinds = [ (mod .|. shift, Xm.xK_q)
-               , (mod .|. shift, Xm.xK_Return)]
+               , (mod, Xm.xK_q)
+               , (mod .|. shift, Xm.xK_Return)
+               , (mod, Xm.xK_p)
+               , (mod .|. shift, Xm.xK_p)
+               ]
     -- new ((shortcut), action) keybindings go here
     newBinds = [ ((mod .|. shift, Xm.xK_q), Xm.kill)
-               , ((mod .|. shift, Xm.xK_e), Xm.io (exitWith ExitSuccess))
                , ((mod, Xm.xK_Return), Xm.spawn $ Xm.terminal conf)
+               , ((mod, Xm.xK_x), Xm.spawn "dmenu"
+               , ((mod .|. shift, Xm.xK_x), Xm.spawn "gmrun"
+               -- quit/restart
+               , ((mod .|. shift, Xm.xK_e), Xm.io (exitWith ExitSuccess))
+               , ((mod .|. shift, Xm.xK_r), Xm.spawn restart)
                ]
+
 
 main :: IO ()
 main = do
@@ -39,9 +48,10 @@ main = do
     , Xm.terminal = myTerminal
     , Xm.keys = myKeys
     }
+  return ()
 
 {-
-Important haskell concepts in use:
+To Newbies! Important haskell concepts in use:
  - The ($) function (function application operator)
  - Qualified imports (Xm.whatever)
  - Record datatypes (Those curly-brace, "name = value" lists)
