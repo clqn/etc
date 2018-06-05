@@ -13,5 +13,6 @@ ln -sr ~/etc/xmonad.hs ~/.xmonad/xmonad.hs
 
 ln -sr ~/etc/Xresources ~/.Xresources
 ln -sr ~/etc/XCompose ~/.XCompose
+ln -sr ~/etc/xprofile ~/.xprofile
 ln -sr ~/etc/tmux.conf ~/.tmux.conf
 ln -sr ~/etc/vimrc ~/.vimrc
