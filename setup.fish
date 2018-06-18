@@ -14,5 +14,10 @@ ln -sr ~/etc/xmonad.hs ~/.xmonad/xmonad.hs
 ln -sr ~/etc/Xresources ~/.Xresources
 ln -sr ~/etc/XCompose ~/.XCompose
 ln -sr ~/etc/xprofile ~/.xprofile
+ln -sr ~/etc/xinitrc ~/.xinitrc
 ln -sr ~/etc/tmux.conf ~/.tmux.conf
 ln -sr ~/etc/vimrc ~/.vimrc
+
+echo "manually address the following:"
+echo "• vconsole.conf should go in /etc"
+echo "• dvorak-swap.map should go in /usr/share/kbd/keymaps/"
