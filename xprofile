@@ -1,4 +1,4 @@
-setxkbmap dvorak -option compose:prsc -option caps:ctrl_modifier &
-xcape -e 'Caps_Lock=Escape' &
+# setxkbmap dvorak -option compose:prsc -option caps:ctrl_modifier &
+# xcape -e 'Caps_Lock=Escape' &
 xrandr --dpi 120 &
 redshift &

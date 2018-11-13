@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Nightwave Plaza
+Exec=/usr/bin/bash -c "surf http://plaza.one"
+Terminal=false

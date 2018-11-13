@@ -1,4 +1,4 @@
-set -g fish_user_paths ~/bin
+set -g fish_user_paths ~/bin ~/.gem/ruby/2.5.0/bin ~/.cargo/bin
 fish_vi_key_bindings
 
 function fish_mode_prompt
@@ -37,3 +37,15 @@ alias tm='tmux attach; or tmux'
 alias todo='vim ~/todo'
 alias note='vim ~/note'
 alias c='xsel -b'
+alias lcal='cat ~/doc/lcal2018'
+alias jserve='bundle exec jekyll serve'
+
+function gitup
+  git init
+  git add -A
+  git commit -m "initial commit"
+  git remote add origin $argv[1]
+  git push -u origin master
+end
+
+
