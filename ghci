@@ -1,0 +1,1 @@
+:set prompt "%s\ESC[1m\STX\ESC[32m\STX λ \ESC[0m\STX"

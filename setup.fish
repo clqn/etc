@@ -21,6 +21,7 @@ ln -sr ~/etc/xprofile ~/.xprofile
 ln -sr ~/etc/xinitrc ~/.xinitrc
 ln -sr ~/etc/tmux.conf ~/.tmux.conf
 ln -sr ~/etc/vimrc ~/.vimrc
+ln -sr ~/etc/ghci ~/.ghci
 
 
 echo "manually address the following:"
