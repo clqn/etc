@@ -1,5 +1,6 @@
 Xft.dpi: 120
-urxvt.font: xft:fantasque sans mono:size=14
+urxvt.font: xft:fantasque sans mono:size=12
+urxvt.transparent: False
 urxvt.scrollBar: False
 urxvt.saveLines: 5000
 
@@ -21,4 +22,4 @@ urxvt.saveLines: 5000
 *.color6:     #8BE9FD
 *.color14:    #9AEDFE
 *.color7:     #BFBFBF
-*.color15:    #E6E6E6⎋
+*.color15:    #E6E6E6

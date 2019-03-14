@@ -1,0 +1,7 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Uninstall MapTool
+Exec="/home/quine/.JWrapper/JWrapper-MapTool/MapToolLinLauncher64" JWVAPP JWRAPPER_UNINSTALLER
+Encoding=UTF-8
+Icon=/home/quine/.JWrapper/JWrapper-MapTool/JWApps/JWrapper-MapTool-icon.png

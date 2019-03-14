@@ -1,4 +1,5 @@
 set -g fish_user_paths ~/bin ~/.gem/ruby/2.5.0/bin ~/.cargo/bin
+set -x SSH_AUTH_SOCK /run/user/1000/gnupg/S.gpg-agent.ssh
 fish_vi_key_bindings
 
 function fish_mode_prompt
@@ -39,6 +40,9 @@ alias note='vim ~/note'
 alias c='xsel -b'
 alias lcal='cat ~/doc/lcal2018'
 alias jserve='bundle exec jekyll serve'
+alias rsbook='rustup doc --book'
+alias rsref='rustup doc --reference'
+alias rsstd='rustup doc --std'
 
 function gitup
   git init

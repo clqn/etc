@@ -1,0 +1,7 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=MapTool
+Exec="/home/quine/.JWrapper/JWrapper-MapTool/MapToolLinLauncher64" JWVAPP MapTool
+Encoding=UTF-8
+Icon=/home/quine/.JWrapper/JWrapper-MapTool/JWApps/JWrapper-MapTool-icon.png
