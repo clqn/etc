@@ -1,6 +1,8 @@
 set -g fish_user_paths ~/bin ~/.gem/ruby/2.5.0/bin ~/.cargo/bin
 set -x SSH_AUTH_SOCK /run/user/1000/gnupg/S.gpg-agent.ssh
-fish_vi_key_bindings
+function fish_user_key_bindings
+  fish_vi_key_bindings
+end
 
 function fish_mode_prompt
   switch $fish_bind_mode
